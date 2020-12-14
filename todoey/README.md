@@ -1,6 +1,8 @@
 # todoey
 
-A To do list application to understand Flutter State Management
+A To-do List application which uses provider package for state management and has an MVC architechture.
+
+- Database setup is under construction
 
 ## Getting Started
 
