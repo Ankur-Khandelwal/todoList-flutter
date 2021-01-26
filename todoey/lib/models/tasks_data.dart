@@ -7,7 +7,7 @@ import 'package:todoey/utils/database-helper.dart';
 import 'tasks.dart';
 
 class TaskData extends ChangeNotifier {
-  DatabaseHelper databaseHelper = DatabaseHelper();
+//   DatabaseHelper databaseHelper = DatabaseHelper();
   List<Task> _task = [];
 
   int get taskCount {
@@ -20,11 +20,11 @@ class TaskData extends ChangeNotifier {
 
   void addTask(String newTaskTitle) async {
     Task task = new Task(name: newTaskTitle);
-    int result = await databaseHelper.insertTask(task);
-    if (result != 0) {
+//     int result = await databaseHelper.insertTask(task);
+//     if (result != 0) {
       _task.add(task);
       notifyListeners();
-    }
+//     }
   }
 
   void updateTask(Task task) {
@@ -33,11 +33,11 @@ class TaskData extends ChangeNotifier {
   }
 
   void deleteTask(Task task) async {
-    int result = await databaseHelper.deleteTask(task.id);
-    if (result != 0) {
+//     int result = await databaseHelper.deleteTask(task.id);
+//     if (result != 0) {
       _task.remove(task);
       notifyListeners();
-    }
+//     }
   }
 
   void deleteAllTasks() {
