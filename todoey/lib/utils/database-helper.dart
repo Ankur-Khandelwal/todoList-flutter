@@ -1,3 +1,5 @@
+//THIS CODE-SNIPPET IS NOT FUNCTIONAL AND THEREFORE NOT USED ANYWHERE IN THE PROJECT.
+
 import 'dart:async';
 import 'dart:io';
 
